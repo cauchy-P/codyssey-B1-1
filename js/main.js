@@ -168,6 +168,11 @@ const renderForm = () => {
   $('#form-status').textContent = state.form.success ? '입력 검증에 성공했습니다. 이 데모는 메시지를 실제로 전송하지 않습니다.' : '';
 };
 fields.forEach((field) => {
+  field.addEventListener('blur', () => {
+    state.form.touched.add(field.name);
+    state.form.errors[field.name] = getFieldError(field.name, field.value);
+    renderForm();
+  });
   field.addEventListener('input', () => {
     state.form.values[field.name] = field.value;
     state.form.success = false;
