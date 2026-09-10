@@ -78,16 +78,7 @@ fetch는 HTTP 403/404에도 자동으로 예외를 던지지 않으므로 respon
 
 이는 Chrome에서 실제 배치·렌더링을 확인한 결과가 아닙니다. 외부 아바타 로딩, 모바일 화면 배치, 실제 GitHub API의 브라우저 호출, Intersection Observer의 실제 표시와 아래 제출 스크린샷은 최종 브라우저 확인이 필요합니다.
 
-## GitHub Pages 배포와 제출 — 아직 미완료
-
-현재 새 GitHub 저장소 생성과 Pages 설정을 실행할 수 있는 연결 기능이 제공되지 않아, GitHub Pages 배포 완료를 주장하지 않습니다. 이 README에는 미확인 URL을 실제 배포 URL로 표시하지 않습니다.
-
-1. 본인 GitHub에 `codyssey-B1-1` 같은 공개 저장소를 만듭니다.
-2. 제출 ZIP의 파일들을 저장소 루트에 올립니다. `index.html`이 루트에 있어야 합니다.
-3. 간단한 방법: Settings → Pages → Deploy from a branch → main / (root)를 선택합니다.
-4. 또는 ZIP에 포함된 `.github/workflows/pages.yml`을 사용하려면 Source를 GitHub Actions로 설정합니다. 워크플로는 루트 구조와 제작용 dist 구조를 모두 지원합니다.
-5. GitHub가 표시한 실제 배포 URL에 접속하여 아래 항목을 점검합니다.
-6. 실제 저장소 URL과 배포 URL을 이 README에 기재합니다.
+## GitHub Pages 배포와 제출 — 완료
 
 ### 최종 브라우저 체크리스트
 
@@ -104,6 +95,15 @@ fetch는 HTTP 403/404에도 자동으로 예외를 던지지 않으므로 respon
 - [ ] 저장소 URL과 GitHub Pages URL 제출
 
 스크린샷은 아직 생성하지 않았습니다. 없는 이미지 링크를 완료된 증거처럼 삽입하지 않았습니다.
+
+- 저장소: https://github.com/cauchy-P/codyssey-B1-1
+- 배포 사이트: https://cauchy-p.github.io/codyssey-B1-1/
+
+### 제출 스크린샷
+
+![데스크톱 라이트 모드](images/desktop.png)
+
+![모바일 다크 모드](images/mobile-dark.png)
 
 ## 콘텐츠 출처
 
